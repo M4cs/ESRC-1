@@ -10,9 +10,9 @@ Based on ESIP-1 Proposal by @dumbnamenumbers: https://twitter.com/dumbnamenumber
 */
 
 
-import "./IESIP-1.sol";
+import "./IESRC1.sol";
 
-contract ESIP1 is IESIP1 {
+contract ESRC1 is IESRC1 {
 
     /**
      * @dev Enscribes `dataURI` to `to` address.
