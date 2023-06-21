@@ -4,6 +4,8 @@ Based on https://twitter.com/dumbnamenumbers/status/1671616392796184579, I'm pro
 
 This contract will enable people to inherit and easily create Ethscriptions from within their own contracts.
 
+**THERE IS NO SECURITY. DO NOT USE THIS IN PRODUCTION. WILL BE UPDATED AS THE PROPOSAL IS BUILT OUT**
+
 ## To Use
 
 ```
