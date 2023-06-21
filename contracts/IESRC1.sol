@@ -21,7 +21,7 @@ interface IESRC1 {
     /**
      * Enscriptions cannot be sent to the ZeroAddress.
      */
-    error EnscriptionToZeroAddress();
+    error EthscriptionToZeroAddress();
 
     /**
      * @dev Emitted when `minter` calls 
@@ -67,10 +67,6 @@ interface IESRC1 {
     /**
      * @dev Transfers ethscription to `to` address by original tx hash.
      *
-     * Requirements:
-     *
-     * - `to` cannot be the zero address.
-     *
      * Emits a {TransferEthscription} event.
      */
     function transferEthscription(
@@ -81,10 +77,6 @@ interface IESRC1 {
     /**
      * @dev Loops through `to` and `txHashes` arrays to transfer Ethscription to
      * each respective address.
-     *
-     * Requirements:
-     *
-     * - `to` addresses cannot be the zero address.
      *
      * Emits {TransferEthscription} events based on number of addresses supplied.
      */
