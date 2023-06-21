@@ -46,7 +46,7 @@ interface IESRC1 {
     function ethscribe(
         address to,
         string memory dataURI
-    ) external;
+    ) public;
 
     /**
      * @dev Loops through `to` and `dataURIs` arrays to enscribe to
@@ -62,7 +62,7 @@ interface IESRC1 {
     function batchEthscribe(
         address[] memory to,
         string[] memory dataURIs
-    ) external;
+    ) public;
 
     /**
      * @dev Transfers ethscription to `to` address by original tx hash.
@@ -72,7 +72,7 @@ interface IESRC1 {
     function transferEthscription(
         address to,
         bytes32 txHash
-    ) external;
+    ) public;
 
     /**
      * @dev Loops through `to` and `txHashes` arrays to transfer Ethscription to
@@ -83,6 +83,6 @@ interface IESRC1 {
     function batchTransferEthscription(
         address[] memory to,
         bytes32[] memory txHashes
-    ) external;
+    ) public;
 
 }
