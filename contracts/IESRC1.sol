@@ -11,7 +11,7 @@ Based on ESIP-1 Proposal by @dumbnamenumbers: https://twitter.com/dumbnamenumber
 
 
 
-interface IESIP1 {
+interface IESRC1 {
 
     /**
      * In batch enscriptions, the `to` array and `data` array must match in length.
