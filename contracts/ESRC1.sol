@@ -27,7 +27,7 @@ contract ESRC1 is IESRC1 {
     function ethscribe(
         address to,
         string memory dataURI
-    ) external {
+    ) public {
         if (to == address(0)) {
             revert EthscriptionToZeroAddress();
         }
@@ -49,7 +49,7 @@ contract ESRC1 is IESRC1 {
     function batchEthscribe(
         address[] memory to,
         string[] memory dataURIs
-    ) external {
+    ) public {
         if (to.length != dataURIs.length) {
             revert MismatchBatchLengths();
         }
@@ -72,8 +72,7 @@ contract ESRC1 is IESRC1 {
     function transferEthscription(
         address to,
         bytes32 txHash
-    ) external {
-
+    ) public {
         emit TransferEthscription(to, txHash);
     }
 
@@ -86,7 +85,7 @@ contract ESRC1 is IESRC1 {
     function batchTransferEthscription(
         address[] memory to,
         bytes32[] memory txHashes
-    ) external {
+    ) public {
         if (to.length != txHashes.length) {
             revert MismatchBatchLengths();
         }
